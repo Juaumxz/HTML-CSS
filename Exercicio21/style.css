@@ -1,0 +1,49 @@
+@charset "UTF-8";   
+
+/*
+ORDEM
+h1 - h1#principal - .principal
+
+id sobrepoe class 
+
+primerio class, depois id
+
+em html id      = em css # (So um elemento por html)
+em html é class = em css é . (Pode mais de um elemento)
+*/
+
+body{
+    background-color: #8766F2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: #1B144F;
+}
+
+h1#principal{
+    text-align: center;
+    color: black;
+    background-color: #34279C;
+    border-radius: 10px;
+}
+
+h2{
+    color: #281E78;
+}
+
+.basico{
+    color: greenyellow;
+}
+
+.intermediario{
+    color: yellow;
+}
+.avançado{
+    color: red;
+}
+
+.destaque{
+    background: white;
+    border-radius: 20px;
+    max-width: max-content;
+}
