@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        .cnome {
+            background-color: blue;
+        }
+        .cgp{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cgp" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+      
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Ana Maria</td>
+            <td>M</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>M</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Maria Oliveira</td>
+            <td>F</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Pedro Santos</td>
+            <td>M</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Juliana Costa</td>
+            <td>F</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Carlos Souza</td>
+            <td>M</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>Beatriz Almeida</td>
+            <td>F</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Lucas Ferreira</td>
+            <td>M</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Gabriela Rocha</td>
+            <td>F</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Rafael Martins</td>
+            <td>M</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Camila Pereira</td>
+            <td>F</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Matheus Ribeiro</td>
+            <td>M</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Larissa Gomes</td>
+            <td>F</td>
+            <td>27</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
