@@ -12,18 +12,25 @@ Grandes Telas acima de 1200px
 
 @media screen and (min-width: 768px) {
     i{
-        display: none;
+        display: none !important;
     }
 
     menu{
         display: inline-block;
-        width: 30%;
-        text-align: center;
+        width: 100%;
+        margin: 0px;
+        text-align: left;
     }
 
     a{
-        display: inline-block;
-        width: 20%;
         text-align: center;
+        width:6vw;
+        margin: 0px;
+    }
+    li{
+        display: inline-block;
+    }
+    main{
+        width: 700px;
     }
 }

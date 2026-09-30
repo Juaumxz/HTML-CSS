@@ -30,7 +30,7 @@
 
         main{
             width: 90vw;
-            margin: 10px;
+            margin: auto;
             padding-left: 20px;
             margin-top: 10px;
             background-color: white;
@@ -49,10 +49,10 @@
          a{
             margin: auto;
             margin-top: 0px;
-            width: 36vw;
-            height: 4vh;
+            width: 32vw;
+            height: 3vh;
             display: block;
-            padding: 5px;
+            padding: 3px;
             text-decoration: none;
             color: white;
             font-weight: bolder;
@@ -69,3 +69,13 @@
          article{
             padding-bottom: 10px;
          }
+    i{
+        display: none;
+    }
+
+    menu{
+        text-align: center;
+    }
+    li{ 
+        display: block;
+    }
