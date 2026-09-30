@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(to top, rgb(87, 28, 87), rgb(45, 45, 111));
+            height: 100vh;
+            width: 100vw;
+        }
+        main{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+        #login{
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(252, 252, 252);
+            width: 300px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px black;
+            transition: width 1s, height 1s;
+            transition-timing-function: ease;
+        }
+        #imagem{
+            display: block;
+            background-color: blue;
+            background-size: cover;
+            height: 200px;
+        }
+        #formulario{
+            text-align: center;
+            display: block;
+            padding: 10px;
+        }
+        .campo{
+            background-color: rgb(42, 16, 42);
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 15px;
+            margin: 6px 0px;
+            overflow: hidden;
+        }
+        .material-symbols-outlined{
+            color: white;
+            font-size: 1.2em;
+            width: 40px;
+            transform: translateY(5px);
+        }
+
+        .campo > input{
+            background-color: rgb(230, 223, 223);
+            font-size: 1em;
+            width: calc(100% - 48px);
+            transform: translateY(-1px);
+            height: 100%;
+            border: 0px;
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        input[type=submit]{
+            display: block;
+            font-size: 1em;
+            width: 100%;
+            height: 40px;
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+            margin-top: 10%;
+            border-radius: 10px;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(66, 27, 66);
+        }
+        @media screen and (min-width: 768px) and (max-width:992px) {
+            section#login{
+                width: 80vw;
+            }
+            #imagem{
+                float: left;
+                width: 30%;
+                height: 100%;
+            }
+            #formulario{
+                float: right;
+                width: 70%;
+                font-size: 1.2em;
+            }
+            .campo>input{
+                transform: translateY(0px);
+            }            
+        }
+
+        @media screen and (min-width: 992px) {
+         #login{
+            width:990px;
+         }
+         #imagem{
+            float: right;
+            width: 50%;
+            height: 100%;
+         }
+         #formulario{
+            float: left;
+            width: 50%;
+         }
+        }
+       </style>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo novamente!</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+
+                        <label for="iemail"><i class="material-symbols-outlined">email</i></label>
+
+                        <input type="email" name="iemail" id="iemail" autocomplete="email" required>
+
+                    </div>
+                    <div class="campo">
+
+                        <label for="isenha"><i class="material-symbols-outlined">key</i></label>
+
+                        <input type="password" name="isenha" id="isenha" autocomplete="current-password" required>
+
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
