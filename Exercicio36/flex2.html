@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            color: rgb(6, 6, 6);
+            background-color: black;
+        }
+        h1{
+            color: grey;
+            text-align: center;
+        }
+        h2{
+            color: rgb(255, 252, 255);
+            text-align: center;
+        }
+        .conteiner{
+            background-color: blue;
+            display: flex;
+            margin: 0px 45%;
+            flex-flow: row nowrap;
+        }
+        .conteiner2{
+            background-color: blue;
+            display: flex;
+            margin: 0px 45%;
+            flex-flow: row wrap;
+        }
+        .conteiner3{
+            background-color: blue;
+            display: flex;
+            margin: 0px 45%;
+            flex-flow: row wrap-reverse;
+        }
+        .item{
+            background-color: rgb(255, 247, 247);
+            border: 1px solid rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <h2>Nowrap</h2>
+    <div class="conteiner" style="margin-top: 20px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item" style="flex: auto;">B</div>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+    <h2>Wrap</h2>
+    <div class="conteiner2" style="margin-top: 20px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item" style="flex: auto;">B</div>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+    <h2>Wrap reverse</h2>
+    <div class="conteiner3" style="margin-top: 20px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item" style="flex: auto;">B</div>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+    <h1>COLUM</h1>
+    <h2>Nowrap</h2>
+        <div class="conteiner" style="margin-top: 20px; flex-direction: column; height: 140px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item" stydiv>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+    <h2>wrap</h2>
+    <div class="conteiner2" style="margin-top: 20px; flex-direction: column; height: 140px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item">B</div>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+    <h2>Wrap reverse</h2>
+    <div class="conteiner3" style="margin-top: 20px; flex-direction: column; height: 140px;">
+        <div class="item" style="background-color: green; color: white; font-weight: bold;">Main start</div>
+        <div class="item">B</div>
+        <div class="item" style="background-color: rgb(142, 6, 6);color: white; font-weight: bold;">Main end</div>
+    </div>
+</body>
+</html>
