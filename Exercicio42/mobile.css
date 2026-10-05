@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(23, 22, 22);
+    color: violet;
+}
+main{
+    background-color: red;
+}
+nav{
+    flex-flow: column nowrap;
+}

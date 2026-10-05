@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header{
+            background-color: gray;
+        }
+        main{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        img{
+            width: 50%;
+        }
+        article{
+            margin: 20px;
+            box-sizing: border-box;
+            border: 3px dotted black;
+        }
+        p{
+            text-align: justify;
+        }
+        .text-media{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .media-text{
+            display: flex;
+            flex-flow: row wrap-reverse;
+            justify-content: space-between;
+        }
+        .text{
+            flex: 1 1 500px;
+        }
+        .media {
+        flex: 1 1 500px;
+        display: flex;
+        justify-content: flex-end;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Exemplo de conteudo flexivel</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi amet culpa error illum rerum, cumque nemo? Ipsum earum sunt quaerat enim id beatae, doloribus, porro aliquam accusamus culpa perspiciatis obcaecati!</p>
+</header>
+    <main>
+        <article class="text-media">
+        
+            <div class="text">
+                <h1>Text -> media</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eaque, necessitatibus tempore harum ratione quam natus quibusdam minus qui odit doloremque, debitis atque dolore impedit consequuntur architecto quae corrupti perferendis.</p>
+            </div>
+
+            <div class="media">
+                <img src="Wallpaper.png" alt="">
+            </div>
+        
+        </article>
+
+        <article class="media-text">
+            
+            <div class="text">
+                <h1>Media -> text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, minima quia aperiam quisquam soluta nobis vitae tempore illo quos sed nihil quidem consequatur nulla ipsa fugiat nisi deserunt, iusto consequuntur!</p>
+            </div>
+
+            <div class="media">
+                <img src="Wallpaper.png" alt="">
+            </div>
+
+        </article>
+
+    </main>
+</body>
+</html>

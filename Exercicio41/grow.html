@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            color: white;
+        }
+        body{
+            background-color: blue;
+        }
+        main{
+            margin: 5%;
+            width: 90%;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+        }
+        div{
+            background-color: yellow;
+            border: 1px solid blue;
+            padding: 5% 3%;
+            margin: 5px;
+            text-align: center;
+            border-radius: 10px;
+            flex-flow: row nowrap;
+        }
+        .item1{
+            flex-basis: 30px;
+            flex-shrink: 1;
+        }
+        .item2{
+            flex-basis: 30px;                
+        }
+    </style>
+</head>
+<body>
+    <h1>Shrink 1</h1>
+    <main style="width: 30%;">
+        <div class="item1" style="flex-shrink: 1;">A</div>
+        <div class="item1" style="flex-shrink: 1;">B</div>
+        <div class="item1" style="flex-shrink: 1;">C</div>
+    </main>
+    <h1>Shrink 2</h1>
+    <main style="width: 30%;">
+        <div class="item1" style="flex-shrink: 0;">A</div>
+        <div class="item1" style="flex-shrink: 0;">B</div>
+        <div class="item1" style="flex-shrink: 0;">C</div>
+    </main>
+    <h1>Grow 1</h1>
+    <main>
+        <div class="item2" style="flex-grow: 1;">A</div>
+        <div class="item2" style="flex-grow: 1;">B</div>
+        <div class="item2" style="flex-grow: 1;">C</div>
+    </main>
+    <h1>Grow 0</h1>
+    <main>
+        <div class="item2" style="flex-grow: 0;">A</div>
+        <div class="item2" style="flex-grow: 0;">B</div>
+        <div class="item2" style="flex-grow: 0;">C</div>
+    </main>
+    <h1>Shrink 1, Grow 1</h1>
+    <main>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">A</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">B</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">C</div>
+    </main>
+    <main style="width: 30%;">
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">A</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">B</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">C</div>
+    </main>
+    <main>
+        <div class="item2" style="flex-grow: 0; flex-shrink: 1;">0</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">1</div>
+        <div class="item2" style="flex-grow: 2; flex-shrink: 1;">2</div>
+    </main>
+    <main style="width: 50%;">
+        <div class="item2" style="flex-grow: 0; flex-shrink: 0;">0</div>
+        <div class="item2" style="flex-grow: 1; flex-shrink: 1;">1</div>
+        <div class="item2" style="flex-grow: 2; flex-shrink: 2;">2</div>
+    </main>
+
+</body>
+</html>

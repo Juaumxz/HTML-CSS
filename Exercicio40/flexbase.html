@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: blue;
+        }
+        main{
+            margin: 5%;
+            width: 90%;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+        }
+        div{
+            background-color: yellow;
+            border: 1px solid blue;
+            padding: 5% 7%;
+            margin: 5px;
+            text-align: center;
+            border-radius: 10px;
+            flex-flow: row nowrap;
+        }
+        .item1{
+            flex-basis: auto; /*Valor padrão*/
+        }
+        .item2{
+            flex-basis: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="item1">A</div>
+        <div class="item1">BBBBB</div>
+        <div class="item1">C</div>
+    </main>
+
+    <main>
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">CCCC CCC</div>
+    </main>
+</body>
+</html>
